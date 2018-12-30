@@ -10,8 +10,9 @@
     var txt = document.getElementById("msg");
     txt.innerHTML = decodeURI(urldata("msg"));
     if(urldata("result")==1) {
-        localStorage.CWlogin = 1;
-        localStorage.CWUN = urldata("UN");
+        localStorage["PAS-LOGIN"] = 1;
+        localStorage["PAS-UN"] = urldata("UN");
+        localStorage["PAS-TID"] = urldata("TID");
         location.href = localStorage.goWhere ? localStorage.goWhere : "account";
     } else {
         location.href = "./";

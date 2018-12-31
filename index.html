@@ -13,6 +13,7 @@
         localStorage["PAS-LOGIN"] = 1;
         localStorage["PAS-UN"] = urldata("UN");
         localStorage["PAS-TID"] = urldata("TID");
+        localStorage["UserInfos"] = urldata("UserInfos");
         location.href = localStorage.goWhere ? localStorage.goWhere : "account";
     } else {
         location.href = "./";
